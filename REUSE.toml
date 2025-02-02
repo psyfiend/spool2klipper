@@ -1,0 +1,14 @@
+# SPDX-FileCopyrightText: 2025 Sebastian Andersson <sebastian@bittr.nu>
+#
+# SPDX-License-Identifier: CC0-1.0
+
+version = 1
+SPDX-PackageName = "spool2klipper"
+SPDX-PackageSupplier = "Sebastian Andersson <sebastian@bittr.nu>"
+SPDX-PackageDownloadLocation = "https://github.com/bofh69/spool2klipper"
+
+[[annotations]]
+path = [".github/**", "requirements.txt", ".gitignore", "spool2klipper.service", "spool2klipper.cfg", "klipper-example-meacros.cfg", "moonraker-spool2klipper.cfg" ]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "$YEAR $NAME <$CONTACT>"
+SPDX-License-Identifier = "CC0-1.0"
