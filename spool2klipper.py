@@ -100,7 +100,7 @@ class Spool2Klipper:
                         self.klipper_spool_set_macro_prefix,
                         spool_data,
                     )
-                    
+
                     if self.klipper_spool_done in self.gcode_macros:
                         await self._run_gcode(self.klipper_spool_done)
             else:
@@ -189,4 +189,3 @@ if __name__ == "__main__":
 
     spool2klipper = Spool2Klipper(config_data)
     spool2klipper.run()
-    
