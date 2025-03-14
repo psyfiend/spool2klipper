@@ -32,7 +32,7 @@ CFG_DIR = "~/.config/" + PROGNAME
 CFG_FILE = PROGNAME + ".cfg"
 
 
-# pylint: disable=R0903
+# pylint: disable=R0902,R0903
 class Spool2Klipper:
     """Moonraker agent to send Spoolman's spool info to Klipper"""
 
