@@ -21,7 +21,7 @@ and it asks Moonraker to run special gcode macros in Klipper for storing data ab
 
 In the cloned repository's dir run:
 ```sh
-virtualenv venv
+python3 -m venv
 venv/bin/pip3 install -r requirements.txt
 ```
 
