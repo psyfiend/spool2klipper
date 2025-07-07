@@ -33,13 +33,14 @@ When spool data is to be sent to Klipper, spool2klipper looks for gcode macros w
 `_SPOOLMAN_SET_FIELD_`_fieldname_. Ie:
 `_SPOOLMAN_SET_FIELD_filament_id`
 
-The macro will be called with the argument `VALUE=`_fields-value_.
+The macro will be called with the argument `VALUE=`_fields-value_ which stores the _fieldname_
+and _fields-value_ into the printer `save_variables`.
 
-If the active spool is cleared in Moonraker, this agent will call (if available):
-`_SPOOLMAN_CLEAR_FIELDS`
+When you select a different spool, or if the active spool is ejected, this agent will call
+(if available): `_SPOOLMAN_CLEAR_FIELDS`
 
-After all the macros have been called, _SPOOLMAN_DONE will be called, if available
-`_SPOOLMAN_DONE`
+After all the macros have been called, a _MSG_ will be sent to the terminal via 
+`_SPOOLMAN_DONE` if available.
 
 Add gcode macros to Klipper's config to receive and handle the fields you are interested in.
 
@@ -70,7 +71,7 @@ gcode:
 
 ```
 
-## Run automaticly with systemd
+## Run automatically with systemd
 
 Copy spool2klippper.service to `/etc/systemd/system`, then run:
 
