@@ -96,6 +96,7 @@ class Spool2Klipper:
                     spool_data: Dict[str, Any] = spool_data
                     logging.info("Fetched Spool data for ID %s", spool_id)
                     logging.debug("Got data from Spoolman: %s", spool_data)
+                    await self._run_gcode(self.klipper_spool_clear_macro)
                     await self._call_klipper_with_data(
                         self.klipper_spool_set_macro_prefix,
                         spool_data,
