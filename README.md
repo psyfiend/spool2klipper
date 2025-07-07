@@ -36,8 +36,9 @@ When spool data is to be sent to Klipper, spool2klipper looks for gcode macros w
 The macro will be called with the argument `VALUE=`_fields-value_ which stores the _fieldname_
 and _fields-value_ into the printer `save_variables`.
 
-When you select a different spool, or if the active spool is ejected, this agent will call
-(if available): `_SPOOLMAN_CLEAR_FIELDS`
+When a new spool is loaded, or if the active spool is ejected, this agent will call 
+`_SPOOLMAN_CLEAR_FIELDS` (if available) before storing new fields. This will ensure all previously 
+stored values are cleared in the event there are filaments with empty fields.
 
 After all the macros have been called, a _MSG_ will be sent to the terminal via 
 `_SPOOLMAN_DONE` if available.
