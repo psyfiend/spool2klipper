@@ -59,7 +59,7 @@ gcode:
     {action_respond_info("Parameter 'VALUE' is required")}
   {% endif %}
 
-[gcode_macro _SPOOLMAN_CLEAR_FIELDS]
+[gcode_macro _SPOOLMAN_CLEAR_SPOOL]
 description: Removes spool info
 gcode:
     SAVE_VARIABLE VARIABLE=active_filament_id VALUE=None
