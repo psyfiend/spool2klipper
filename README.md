@@ -1,11 +1,11 @@
 <!--
-SPDX-FileCopyrightText: 2025 Sebastian Andersson <sebastian@bittr.nu>
+SPDX-FileCopyrightText: 2025 psyfiend
 
 SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
-[![REUSE status](https://api.reuse.software/badge/github.com/bofh69/spool2klipper)](https://api.reuse.software/info/github.com/bofh69/spool2klipper)
-![GitHub Workflow Status](https://github.com/bofh69/spool2klipper/actions/workflows/pylint.yml/badge.svg)
+[![REUSE status](https://api.reuse.software/badge/github.com/psyfiend/spool2klipper)](https://api.reuse.software/info/github.com/psyfiend/spool2klipper)
+![GitHub Workflow Status](https://github.com/psyfiend/spool2klipper/actions/workflows/pylint.yml/badge.svg)
 
 
 # spool2klipper
